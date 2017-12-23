@@ -6,8 +6,10 @@
 
   <title>Amanda Herschleb</title>
 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"/>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="grid.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -21,46 +23,58 @@
   </nav>
 
   <main role="main">
-      <header role="banner">
-          <h1>Hi, I'm Amanda, a fullstack developer in Boulder, CO.</h1>
+      <header role="banner" class="hero-image">
+          <h1 class="hero-text">Hi, I'm Amanda<br>a web developer in Boulder, CO</h1>
       </header>
 
       <section id="about">
-          <h1>About me</h1>
-          <img src="https://dummyimage.com/400x400/383737/ffffff&text=image+of+me" alt="amanda">
-          <p>Lorem ipsum dolor amet health goth chartreuse locavore roof party lyft pitchfork. Quinoa occupy direct trade DIY live-edge. Gentrify flexitarian hoodie, subway tile coloring book forage meditation squid yuccie normcore. Pork belly organic tilde godard 8-bit intelligentsia jean shorts mumblecore humblebrag kickstarter 3 wolf moon leggings mlkshk pour-over street art. Seitan waistcoat tofu before they sold out salvia keffiyeh tilde aesthetic.</p>
+          <div class="row">
+            <h1>About me</h1>
+            <img class="me-image" src="http://res.cloudinary.com/amhprojects/image/upload/v1514068222/portfolio/amanda.jpg" alt="amanda">
+            <p>I am a web developer and recent graduate of the Full Stack Web Development bootcamp at Thinkful.
+              I love coding because it is challenging, fun and there is always something new to learn and keep
+              me interested.  When working on a project, I lose track of time because I am so excited about seeing
+              my vision become a reality.
+            </p>
+		        <p>When I am not coding, I'm often found at the rock climbing gym, skiing or hiking in the mountains
+              or traveling the world.  I am driven and give my all to everything I set out to do.
+            </p>
+          </div>
       </section>
 
       <section id="portfolio">
-          <h1>Portfolio</h1>
-          <div class="project-box">
-            <h2>Project 1</h2>
-            <img src="https://dummyimage.com/600x400/383737/ffffff&text=project+screenshot" alt="screenshot">
-            <p>Lorem ipsum dolor amet cliche kogi yr, XOXO 90's retro VHS tofu. Kinfolk adaptogen migas, franzen chillwave mlkshk authentic banh mi bicycle rights occupy fingerstache tumblr edison bulb wayfarers forage. Food truck hoodie meditation blog vape swag next level gastropub actually gochujang truffaut. </p>
-          </div>
+          <div class="row">
+            <h1>Portfolio</h1>
+            <div class="project-box">
+              <h2>Project 1</h2>
+              <img src="https://dummyimage.com/600x400/383737/ffffff&text=project+screenshot" alt="screenshot">
+              <p>Lorem ipsum dolor amet cliche kogi yr, XOXO 90's retro VHS tofu. Kinfolk adaptogen migas, franzen chillwave mlkshk authentic banh mi bicycle rights occupy fingerstache tumblr edison bulb wayfarers forage. Food truck hoodie meditation blog vape swag next level gastropub actually gochujang truffaut. </p>
+            </div>
 
-          <div>
-            <h2>Project 2</h2>
-            <img src="https://dummyimage.com/600x400/383737/ffffff&text=project+screenshot" alt="screenshot">
-            <p>Lorem ipsum dolor amet cliche kogi yr, XOXO 90's retro VHS tofu. Kinfolk adaptogen migas, franzen chillwave mlkshk authentic banh mi bicycle rights occupy fingerstache tumblr edison bulb wayfarers forage. Food truck hoodie meditation blog vape swag next level gastropub actually gochujang truffaut. </p>
-          </div>
+            <div>
+              <h2>Project 2</h2>
+              <img src="https://dummyimage.com/600x400/383737/ffffff&text=project+screenshot" alt="screenshot">
+              <p>Lorem ipsum dolor amet cliche kogi yr, XOXO 90's retro VHS tofu. Kinfolk adaptogen migas, franzen chillwave mlkshk authentic banh mi bicycle rights occupy fingerstache tumblr edison bulb wayfarers forage. Food truck hoodie meditation blog vape swag next level gastropub actually gochujang truffaut. </p>
+            </div>
 
-          <div>
-            <h2>Project 3</h2>
-            <img src="https://dummyimage.com/600x400/383737/ffffff&text=project+screenshot" alt="screenshot">
-            <p>Lorem ipsum dolor amet cliche kogi yr, XOXO 90's retro VHS tofu. Kinfolk adaptogen migas, franzen chillwave mlkshk authentic banh mi bicycle rights occupy fingerstache tumblr edison bulb wayfarers forage. Food truck hoodie meditation blog vape swag next level gastropub actually gochujang truffaut. </p>
+            <div>
+              <h2>Project 3</h2>
+              <img src="https://dummyimage.com/600x400/383737/ffffff&text=project+screenshot" alt="screenshot">
+              <p>Lorem ipsum dolor amet cliche kogi yr, XOXO 90's retro VHS tofu. Kinfolk adaptogen migas, franzen chillwave mlkshk authentic banh mi bicycle rights occupy fingerstache tumblr edison bulb wayfarers forage. Food truck hoodie meditation blog vape swag next level gastropub actually gochujang truffaut. </p>
+            </div>
           </div>
       </section>
 
-      <section id="contact">
-          <h1>Contact</h1>
-          <p>email</p>
-          <p>linkedIn</p>
-          <p>github</p>
+      <section id="contact" class="last-section">
+          <div class="row">
+            <h1>Contact</h1>
+            <p>email</p>
+            <p>linkedIn</p>
+            <p>github</p>
+          </div>
       </section>
 
   </main>
-  <footer role="content-info">Footer</footer>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
     crossorigin="anonymous">

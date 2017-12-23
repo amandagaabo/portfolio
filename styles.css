@@ -3,10 +3,9 @@
 }
 
 body {
-  font-family: "Open Sans",
-  sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 20px;
-  color: #444;
+  color: white;
   text-align: center;
   line-height: 1.5;
 }
@@ -22,7 +21,7 @@ nav {
   left: 0;
   right: 0;
   z-index: 10;
-  height: 30px;
+  height: 53px;
 }
 
 header {
@@ -31,25 +30,48 @@ header {
 
 main {
   position: relative;
-  top: 52px;
+  top: 53px;
 }
 
 section {
   min-height: 200px;
   padding: 30px 0;
-  background-color: #bbb;
+  background-color: #383737;
 }
 
 section:nth-child(even) {
-  background-color: #ddd;
+  background-color: #2A2828;
 }
 
-#contact {
+.last-section {
   height: 100vh;
 }
 
+.hero-image {
+  background-image: url("https://res.cloudinary.com/amhprojects/image/upload/v1514069186/portfolio/mountain.jpg");
+  height: 475px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  position: absolute;
+  color: white;
+  width: 75%;
+  top: 2px;
+  left: 12.5%;
+}
+
+.me-image {
+  width: 50%;
+}
+
+/* responsive nav bar css */
 .topnav {
   background-color: #2A2828;
+  border-bottom: 1px solid #383737;
   overflow: hidden;
 }
 
@@ -63,8 +85,8 @@ section:nth-child(even) {
 }
 
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: #383737;
+  color: white;
 }
 
 .active {
