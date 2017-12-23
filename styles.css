@@ -10,11 +10,6 @@ body {
   line-height: 1.5;
 }
 
-footer {
-  padding: 10px 0;
-  background-color: #2A2828;
-}
-
 nav {
   position: fixed;
   top: 0;
@@ -68,6 +63,24 @@ section:nth-child(even) {
   width: 50%;
 }
 
+.project-box {
+  margin: 30px 0;
+}
+
+.project-screenshot {
+  width: 100%;
+}
+
+.project-links a {
+  text-decoration: none;
+  color: #A7D49B;
+  padding: 10px;
+}
+
+.project-links a:hover {
+  text-decoration: underline;
+}
+
 /* responsive nav bar css */
 .topnav {
   background-color: #2A2828;
@@ -86,7 +99,7 @@ section:nth-child(even) {
 
 .topnav a:hover {
   background-color: #383737;
-  color: white;
+  color: #A7D49B;
 }
 
 .active {
