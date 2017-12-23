@@ -71,14 +71,20 @@ section:nth-child(even) {
   width: 100%;
 }
 
-.project-links a {
+.project-links a, .contact-info a {
   text-decoration: none;
   color: #A7D49B;
   padding: 10px;
 }
 
-.project-links a:hover {
+.project-links a:hover, .contact-info a:hover {
   text-decoration: underline;
+}
+
+.contact-info * {
+  display: block;
+  padding: 10px;
+  margin: 0;
 }
 
 /* responsive nav bar css */
