@@ -10,7 +10,7 @@ function startApp() {
   handleNavIconClick();
 
   function handleNavLinkClick() {
-    $('#myTopnav').on('click', '.link', function() {
+    $('#myTopnav').on('click', '.nav-link', function() {
       if ($('#myTopnav').hasClass('show-menu')) {
         $('#myTopnav').removeClass("show-menu");
       }

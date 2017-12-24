@@ -46,7 +46,7 @@
 }
 
 /* Non-mobile, grid and other settings */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 500px) {
   /* 1 column, 1/12 in % */
   .col-1 {
     width: 8.33333%;
