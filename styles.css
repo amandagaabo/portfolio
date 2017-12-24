@@ -60,7 +60,7 @@ section:nth-child(even) {
 }
 
 .me-image {
-  width: 50%;
+  width: 75%;
 }
 
 .project-box {
@@ -114,26 +114,27 @@ section:nth-child(even) {
   color: white;
 }
 
-/* Hide the link that should open and close the topnav on large screens */
+/* Hide the link that will open and close the topnav on large screens */
 .topnav .icon {
   display: none;
 }
 
-/* When the screen is less than 500 pixels wide, hide all links and close the topnav (.icon) */
+/* When the screen is less than 500 pixels wide, hide all links and close the topnav */
 @media only screen and (max-width: 500px) {
+  .me-image {
+    width: 100%;
+  }
+
   .topnav a {
     display: none;
   }
 
-  .topnav a.icon {
+  .topnav .icon {
     float: right;
     display: block;
   }
-}
 
-/* The "show-menu" class is added to the topnav with JavaScript when the user clicks on the icon */
-@media only screen and (max-width: 500px) {
-  .show-menu a.icon {
+  .show-menu .icon {
     position: absolute;
     right: 0;
     top: 0;
