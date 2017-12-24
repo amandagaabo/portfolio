@@ -6,64 +6,145 @@
 
   <title>Amanda Herschleb</title>
 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"/>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="grid.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <nav role="navigation">
     <div class="topnav" id="myTopnav">
-      <a href="#about" class="link">About Me</a>
-      <a href="#portfolio" class="link">Portfolio</a>
-      <a href="#contact" class="link">Contact</a>
+      <a href="#about" class="link">ABOUT ME</a>
+      <a href="#portfolio" class="link">PORTFOLIO</a>
+      <a href="#contact" class="link">CONTACT</a>
       <a href="javascript:void(0);" class="icon" id="nav-icon">&#9776;</a>
     </div>
   </nav>
 
   <main role="main">
-      <header role="banner">
-          <h1>Hi, I'm Amanda, a fullstack developer in Boulder, CO.</h1>
+      <header role="banner" class="hero-image">
+          <h1 class="hero-text">Hi, I'm Amanda<br>a web developer in Boulder, CO</h1>
       </header>
 
       <section id="about">
-          <h1>About me</h1>
-          <img src="https://dummyimage.com/400x400/383737/ffffff&text=image+of+me" alt="amanda">
-          <p>Lorem ipsum dolor amet health goth chartreuse locavore roof party lyft pitchfork. Quinoa occupy direct trade DIY live-edge. Gentrify flexitarian hoodie, subway tile coloring book forage meditation squid yuccie normcore. Pork belly organic tilde godard 8-bit intelligentsia jean shorts mumblecore humblebrag kickstarter 3 wolf moon leggings mlkshk pour-over street art. Seitan waistcoat tofu before they sold out salvia keffiyeh tilde aesthetic.</p>
+          <div class="row">
+            <h1>ABOUT ME</h1>
+            <img
+              class="me-image"
+              src="https://res.cloudinary.com/amhprojects/image/upload/v1514068222/portfolio/amanda.jpg"
+              alt="amanda"
+            >
+
+            <p>I am a web developer and recent graduate of the Full Stack Web Development bootcamp at Thinkful.
+              I love coding because it is challenging, fun and there is always something new to learn and keep
+              me interested.  When working on a project, I lose track of time because I am so excited about seeing
+              my vision become a reality.
+            </p>
+
+            <p>When I am not coding, I'm often found at the rock climbing gym, skiing or hiking in the mountains
+              or traveling the world.  I am driven and give my all to everything I set out to do.
+            </p>
+          </div>
       </section>
 
       <section id="portfolio">
-          <h1>Portfolio</h1>
-          <div class="project-box">
-            <h2>Project 1</h2>
-            <img src="https://dummyimage.com/600x400/383737/ffffff&text=project+screenshot" alt="screenshot">
-            <p>Lorem ipsum dolor amet cliche kogi yr, XOXO 90's retro VHS tofu. Kinfolk adaptogen migas, franzen chillwave mlkshk authentic banh mi bicycle rights occupy fingerstache tumblr edison bulb wayfarers forage. Food truck hoodie meditation blog vape swag next level gastropub actually gochujang truffaut. </p>
-          </div>
+          <div class="row">
+            <h1>PORTFOLIO</h1>
+            <div class="project-box">
+              <h2>Simply Planned</h2>
+              <img
+                class="project-screenshot"
+                src="https://res.cloudinary.com/amhprojects/image/upload/v1514068221/portfolio/simply-planned.png"
+                alt="simply-planned-screenshot"
+              >
 
-          <div>
-            <h2>Project 2</h2>
-            <img src="https://dummyimage.com/600x400/383737/ffffff&text=project+screenshot" alt="screenshot">
-            <p>Lorem ipsum dolor amet cliche kogi yr, XOXO 90's retro VHS tofu. Kinfolk adaptogen migas, franzen chillwave mlkshk authentic banh mi bicycle rights occupy fingerstache tumblr edison bulb wayfarers forage. Food truck hoodie meditation blog vape swag next level gastropub actually gochujang truffaut. </p>
-          </div>
+              <p>A full stack react app for simple meal planning. The app will allow users to add meals to each
+                day of the week. Meals can be as short or as long as the user wants and can include references
+                to recipes or pages in a cook book. A grocery list is available for the user to start adding items
+                they will need as they add meals to their plan.
+              </p>
 
-          <div>
-            <h2>Project 3</h2>
-            <img src="https://dummyimage.com/600x400/383737/ffffff&text=project+screenshot" alt="screenshot">
-            <p>Lorem ipsum dolor amet cliche kogi yr, XOXO 90's retro VHS tofu. Kinfolk adaptogen migas, franzen chillwave mlkshk authentic banh mi bicycle rights occupy fingerstache tumblr edison bulb wayfarers forage. Food truck hoodie meditation blog vape swag next level gastropub actually gochujang truffaut. </p>
+              <p>Technologies used: HTML & CSS, JavaScript, React & Redux, Node.js & Express, MongoDB & Mongoose,
+                Mocha, Chai, Jest & Enzyme, Passport & bcrypt.js, Lodash, Moment.js, Travis CI
+              </p>
+
+              <div class="project-links">
+                <a href="https://simplyplanned.amandaherschleb.com/" target="_blank" >Live App</a>
+                <a href="https://github.com/amandaherschleb/simply-planned-client" target="_blank" >Client Code</a>
+                <a href="https://github.com/amandaherschleb/simply-planned-api" target="_blank" >API Code</a>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="project-box">
+              <h2>Select the Dress</h2>
+              <img
+                class="project-screenshot"
+                src="https://res.cloudinary.com/amhprojects/image/upload/v1514068222/portfolio/select-the-dress.png"
+                alt="select-the-dress-screenshot"
+              >
+
+              <p>A server rendered app that will allow users to compare dresses they have tried on to help select
+                the perfect one for the occasion. The user can upload images of each dress along with any additional
+                information they want to use for comparison including designer, style, price, store and notes. The user
+                can view dresses individually, compare two side by side or see all dresses and sort by rating, price
+                and designer.
+              </p>
+
+              <p>Technologies used: HTML & CSS, Pug, JavaScript, jQuery, Node.js & Express, MongoDB & Mongoose,
+                Passport.js, Mocha & Chai, Sinon.JS, Lodash, Numeral.js, Sessions, Connect Flash, Cloudinary & Multer
+              </p>
+
+              <div class="project-links">
+                <a href="https://select-the-dress.herokuapp.com/" target="_blank" >Live App</a>
+                <a href="https://github.com/amandaherschleb/select-the-dress" target="_blank" >Code</a>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="project-box">
+              <h2>My 14ers</h2>
+              <img
+                class="project-screenshot"
+                src="https://res.cloudinary.com/amhprojects/image/upload/v1514068222/portfolio/my-14ers.png"
+                alt="my-14ers-screenshot"
+              >
+
+              <p>A jQuery app that allows users to keep track of which 14ers in Colorado they have summited.
+                The user can add 14ers to their completed peaks log,  view a sortable photo list or map of
+                their completed 14ers.
+              </p>
+
+              <p>Technologies used: HTML, CSS, JavaScript, jQuery, Lodash, Numeral.js, Moment.js</p>
+
+              <div class="project-links">
+                <a href="https://amandaherschleb.github.io/my-14ers/" target="_blank" >Live App</a>
+                <a href="https://github.com/amandaherschleb/my-14ers" target="_blank" >Code</a>
+              </div>
+            </div>
           </div>
       </section>
 
-      <section id="contact">
-          <h1>Contact</h1>
-          <p>email</p>
-          <p>linkedIn</p>
-          <p>github</p>
+      <section id="contact" class="last-section">
+          <div class="row">
+            <h1>CONTACT</h1>
+            <div class="contact-info">
+              <a href="mailto:amanda.herschleb@gmail.com">email</a>
+              <a href="https://www.linkedin.com/in/amandaherschleb/" target="_blank">linkedIn</a>
+              <a href="https://github.com/amandaherschleb" target="_blank">github</a>
+            </div>
+          </div>
       </section>
 
   </main>
-  <footer role="content-info">Footer</footer>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
-    crossorigin="anonymous">
+    crossorigin="anonymous"
+  >
   </script>
   <script src="index.js"></script>
 </body>

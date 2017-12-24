@@ -19,6 +19,6 @@ function startApp() {
 
   handleNavLinkClick();
 
-}
+};
 
-$(startApp)
+$(startApp);
