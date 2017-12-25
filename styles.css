@@ -42,6 +42,10 @@ section:nth-child(even) {
   height: 100vh;
 }
 
+p {
+  text-align: justify;
+}
+
 .hero-image {
   background-image: url("https://res.cloudinary.com/amhprojects/image/upload/v1514069186/portfolio/mountain.jpg");
   height: 500px;
@@ -109,10 +113,6 @@ section:nth-child(even) {
   color: #A7D49B;
 }
 
-.active {
-  background-color: #4CAF50;
-  color: white;
-}
 
 /* Hide the link that will open and close the topnav on large screens */
 .topnav .icon {
