@@ -16,7 +16,6 @@ nav {
   left: 0;
   right: 0;
   z-index: 10;
-  height: 53px;
 }
 
 header {
@@ -25,7 +24,7 @@ header {
 
 main {
   position: relative;
-  top: 53px;
+  top: 60px;
 }
 
 section {
@@ -40,6 +39,10 @@ section:nth-child(even) {
 
 .last-section {
   height: 100vh;
+}
+
+p {
+  text-align: justify;
 }
 
 .hero-image {
@@ -95,23 +98,26 @@ section:nth-child(even) {
   overflow: hidden;
 }
 
+.large-nav a {
+  font-size: 20px;
+  padding: 14px 16px;
+}
+
+.small-nav a {
+  font-size: 16px;
+  padding: 10px 14px;
+}
+
 .topnav a {
   display: inline-block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
 }
 
 .topnav a:hover {
   background-color: #383737;
   color: #A7D49B;
-}
-
-.active {
-  background-color: #4CAF50;
-  color: white;
 }
 
 /* Hide the link that will open and close the topnav on large screens */
