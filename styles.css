@@ -75,13 +75,13 @@ p {
   border: 1px solid white;
 }
 
-.project-links a, .contact-info a {
+.project-links a, .contact-info a, .resume-link {
   text-decoration: none;
   color: #A7D49B;
   padding: 10px;
 }
 
-.project-links a:hover, .contact-info a:hover {
+.project-links a:hover, .contact-info a:hover, .resume-link:hover {
   text-decoration: underline;
 }
 
