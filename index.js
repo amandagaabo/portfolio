@@ -7,15 +7,17 @@ function startApp() {
   }
 
   function handleNavLinkClick() {
-    $('#myTopnav').on('click', '.nav-link', () => {
+    $('#myTopnav').on('click', '.nav-link', (e) => {
       // if mobile and show-menu is active then hide the top menu on nave link click
       if ($('#myTopnav').hasClass('show-menu')) {
         $('#myTopnav').removeClass('show-menu');
       }
 
       // nice scroll to the path in the link
-      const path = $(this).attr('href');
-      $.scrollTo($(`${path}`), {
+      const element = e.target;
+      const path = $(element).attr('href') || '';
+
+      $.scrollTo($(path), {
         axis: 'y',
         duration: 1000,
         specialEasing: {
