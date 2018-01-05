@@ -45,10 +45,14 @@ p {
   text-align: justify;
 }
 
+.section-header {
+  color: #A7D49B;
+}
+
 .hero-image {
-  background-image: url("https://res.cloudinary.com/amhprojects/image/upload/v1514069186/portfolio/mountain.jpg");
+  background-image: url("https://res.cloudinary.com/amhprojects/image/upload/v1515091398/portfolio/mountain-color.jpg");
   height: 500px;
-  background-position: center;
+  background-position: 0% 25%;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -91,6 +95,10 @@ p {
   margin: 0;
 }
 
+.fa {
+  margin-right: 5px;
+}
+
 /* responsive nav bar css */
 .topnav {
   background-color: #2A2828;
@@ -125,8 +133,13 @@ p {
   display: none;
 }
 
-/* Mobile styles - when the screen is less than 500 pixels wide, hide all links and close the topnav, show the icon */
-@media only screen and (max-width: 500px) {
+/* Mobile styles - when the screen is less than 600 pixels wide, hide all links and close the topnav, show the icon */
+@media only screen and (max-width: 600px) {
+  .hero-image {
+    background-position: 50% 20%;
+    background-size: auto 900px;
+  }
+
   .me-image {
     width: 100%;
   }
