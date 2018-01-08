@@ -79,34 +79,51 @@ p {
   border: 1px solid white;
 }
 
-.project-links a, .contact-info a, .resume-link {
+.project-links a, .contact-link, .resume-link {
   text-decoration: none;
   color: #A7D49B;
   padding: 10px;
 }
 
-.project-links a:hover, .contact-info a:hover, .resume-link:hover {
+.project-links a:hover, .resume-link:hover {
   text-decoration: underline;
-}
-
-.contact-info p {
-  text-align: center;
-  margin-bottom: 0;
-}
-
-.contact-link {
-  display: block;
-  padding: 20px;
-  margin: 0;
-}
-
-.contact-link:hover {
-  font-size: 1.1em;
 }
 
 .fa {
   margin-right: 9px;
 }
+
+.contact-col {
+  display: inline-block;
+  padding: 30px;
+  border: 1px solid white;
+  min-width: 300px;
+  margin-bottom: 10px;
+}
+
+.left {
+  margin-right: 5px;
+}
+
+.right {
+  margin-left: 5px;
+}
+
+.contact-col p {
+  text-align: left;
+}
+
+.contact-link {
+  display: block;
+  margin: 10px 0 0 0;
+  padding: 0;
+}
+
+.contact-link:hover {
+  color: white;
+}
+
+
 
 /* responsive nav bar css */
 .topnav {
@@ -142,8 +159,8 @@ p {
   display: none;
 }
 
-/* Mobile styles - when the screen is less than 600 pixels wide, hide all links and close the topnav, show the icon */
-@media only screen and (max-width: 600px) {
+/* Mobile styles - when the screen is less than 665 pixels wide, hide all links and close the topnav, show the icon */
+@media only screen and (max-width: 665px) {
   .hero-image {
     background-position: 50% 20%;
     background-size: auto 900px;
@@ -172,5 +189,17 @@ p {
     float: none;
     display: block;
     text-align: left;
+  }
+
+  .contact-col {
+    margin: 7px 0;
+  }
+
+  .contact-col p {
+    margin: 0;
+  }
+
+  .last-section {
+    height: 100%;
   }
 }
