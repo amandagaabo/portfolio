@@ -52,7 +52,7 @@ p {
 .hero-image {
   background-image: url("https://res.cloudinary.com/amhprojects/image/upload/v1515091398/portfolio/mountain-color.jpg");
   height: 500px;
-  background-position: 0% 25%;
+  background-position: 0 25%;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -89,14 +89,23 @@ p {
   text-decoration: underline;
 }
 
-.contact-info a {
+.contact-info p {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.contact-link {
   display: block;
-  padding: 10px;
+  padding: 20px;
   margin: 0;
 }
 
+.contact-link:hover {
+  font-size: 1.1em;
+}
+
 .fa {
-  margin-right: 5px;
+  margin-right: 9px;
 }
 
 /* responsive nav bar css */
