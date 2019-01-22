@@ -31,67 +31,133 @@
 
   <main role="main">
       <header role="banner" class="hero-image">
-        <h1 class="hero-text">I'm Amanda,<br>a web developer in Boulder, CO</h1>
+        <h1 class="hero-text">
+          I'm Amanda,<br>a web developer in Boulder, CO
+        </h1>
       </header>
 
       <section id="about">
         <div class="row">
-          <h1 class="section-header">ABOUT ME</h1>
+          <h1 class="section-header">
+            ABOUT ME
+          </h1>
           <img
             class="me-image"
             src="https://res.cloudinary.com/amhprojects/image/upload/v1515091997/portfolio/amanda-color.jpg"
             alt="amanda"
           >
 
-          <p>I am a web developer and recent graduate of the Full Stack Web Development bootcamp at Thinkful.
+          <p>
+            I am a web developer and graduate of the Full Stack Web Development bootcamp at Thinkful (December 2017).
             I love coding because it is challenging, fun and I stay interested because there is always something
             new to learn.  When working on a project, I lose track of time because I am so excited about
             my vision becoming a reality.
           </p>
 
-          <p>When I am not coding, I'm often found at the rock climbing gym, skiing, hiking in the mountains
+          <p>
+            When I am not coding, I'm often found at the rock climbing gym, skiing, hiking in the mountains
             or traveling the world.  I work hard and give my all to everything I set out to do.
           </p>
 
           <a href="https://resume.amandaherschleb.com/" class="resume-link" target="_blank">
             <i class="fa fa-file-text-o" aria-hidden="true"></i>
-            Resume
+            <span class="link-text">
+              Resume
+            </span>
           </a>
         </div>
       </section>
 
       <section id="portfolio">
         <div class="row">
-          <h1 class="section-header">PORTFOLIO</h1>
+          <h1 class="section-header">
+            PORTFOLIO
+          </h1>
 
           <div class="project-box">
-            <h2>Select the Dress</h2>
+            <h2>
+              My 14ers React
+            </h2>
+            <img 
+              alt="my-14ers-react-screenshot" 
+              class="project-screenshot"
+              src="https://res.cloudinary.com/amhprojects/image/upload/v1547580180/my14ers-screenshots/peak-list.png"
+            />
+          
+            <p>
+              A React app that allows users to track which Colorado 14ers they have hiked. The user can add all of the peaks they have
+              hiked, view a sortable list of their peaks, edit the peak data, view the peaks on a Google map and see a dashboard summary
+              of their progress. I originally created My 14ers as a frontend only jQuery app. This app is a new version that uses a React
+              frontend and connects to a backend with a SQL database.
+            </p>
+          
+            <p>
+              Technologies used: HTML & CSS, JavaScript, React, Redux, Node & Express, PostgreSQL, Objection, Jest & Enzyme,
+              Mocha & Chai, Sinon, Passport, Facebook Login, Google Maps API, Moment, Numeral, Lodash
+            </p>
+          
+            <div class="project-links">
+              <a href="https://www.my14ers.com" target="_blank">
+                <i class="fa fa-desktop" aria-hidden="true"></i>
+                <span class="link-text">
+                  Live App
+                </span>
+              </a>
+          
+              <a href="https://github.com/amandaherschleb/my-14ers-react" target="_blank">
+                <i class="fa fa-code" aria-hidden="true"></i>
+                <span class="link-text">
+                  Web Code
+                </span>
+              </a>
+              
+              <a href="https://github.com/amandaherschleb/my-14ers-api" target="_blank">
+                <i class="fa fa-code" aria-hidden="true"></i>
+                <span class="link-text">
+                  API Code
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="project-box">
+            <h2>
+              Select the Dress
+            </h2>
             <img
               class="project-screenshot"
               src="https://res.cloudinary.com/amhprojects/image/upload/v1514068222/portfolio/select-the-dress.png"
               alt="select-the-dress-screenshot"
             />
 
-            <p>A server rendered app that will allow users to compare dresses they have tried on to help select
+            <p>
+              A server rendered app that will allow users to compare dresses they have tried on to help select
               the perfect one for the occasion. The user can upload images of each dress along with any additional
               information they want to use for comparison including designer, style, price, store and notes. The user
               can view dresses individually, compare two side by side or see all dresses and sort by rating, price
               and designer.
             </p>
 
-            <p>Technologies used: HTML & CSS, Pug, JavaScript, jQuery, Node & Express, MongoDB & Mongoose,
+            <p>
+              Technologies used: HTML & CSS, Pug, JavaScript, jQuery, Node & Express, MongoDB & Mongoose,
               Passport, Mocha & Chai, Sinon, Lodash, Numeral, Sessions, Connect Flash, Cloudinary & Multer
             </p>
 
             <div class="project-links">
               <a href="https://select-the-dress.herokuapp.com/" target="_blank">
-                <i class="fa fa-desktop" aria-hidden="true"></i>
-                Live App
+                <i class="fa fa-desktop link-text" aria-hidden="true"></i>
+                <span class="link-text">
+                  Live App
+                </span>
               </a>
 
               <a href="https://github.com/amandaherschleb/select-the-dress" target="_blank">
                 <i class="fa fa-code" aria-hidden="true"></i>
-                Code
+                <span class="link-text">
+                  API Code
+                </span>
               </a>
             </div>
           </div>
@@ -99,37 +165,47 @@
           <hr>
 
           <div class="project-box">
-            <h2>Simply Planned</h2>
+            <h2>
+              Simply Planned
+            </h2>
             <img
               class="project-screenshot"
               src="https://res.cloudinary.com/amhprojects/image/upload/v1515132852/portfolio/simply-planned.png"
               alt="simply-planned-screenshot"
             />
 
-            <p>A full stack react app for simple meal planning. The app will allow users to add meals to each
+            <p>
+              A full stack react app for simple meal planning. The app will allow users to add meals to each
               day of the week. Meals can be as short or as long as the user wants and can include references
               to recipes or pages in a cook book. A grocery list is available for the user to start adding items
               they will need as they add meals to their plan.
             </p>
 
-            <p>Technologies used: HTML & CSS, JavaScript, React & Redux, Node & Express, MongoDB & Mongoose,
+            <p>
+              Technologies used: HTML & CSS, JavaScript, React & Redux, Node & Express, MongoDB & Mongoose,
               Mocha, Chai, Jest & Enzyme, Passport & bcrypt, Lodash, Moment, Travis CI
             </p>
 
             <div class="project-links">
               <a href="https://simplyplanned.amandaherschleb.com/" target="_blank">
                 <i class="fa fa-desktop" aria-hidden="true"></i>
-                Live App
+                <span class="link-text">
+                  Live App
+                </span>
               </a>
 
               <a href="https://github.com/amandaherschleb/simply-planned-client" target="_blank">
                 <i class="fa fa-code" aria-hidden="true"></i>
-                Client Code
+                <span class="link-text">
+                  Web Code
+                </span>
               </a>
 
               <a href="https://github.com/amandaherschleb/simply-planned-api" target="_blank">
                 <i class="fa fa-code" aria-hidden="true"></i>
-                API Code
+                <span class="link-text">
+                  API Code
+                </span>
               </a>
             </div>
           </div>
@@ -137,44 +213,59 @@
           <hr>
 
           <div class="project-box">
-            <h2>My 14ers</h2>
+            <h2>
+              My 14ers jQuery
+            </h2>
             <img
               class="project-screenshot"
               src="https://res.cloudinary.com/amhprojects/image/upload/v1514068222/portfolio/my-14ers.png"
               alt="my-14ers-screenshot"
             />
 
-            <p>A jQuery app that allows users to keep track of which 14ers in Colorado they have summited.
+            <p>
+              A jQuery app that allows users to keep track of which 14ers in Colorado they have summited.
               The user can add 14ers to their completed peaks log,  view a sortable photo list or map of
               their completed 14ers.
             </p>
 
-            <p>Technologies used: HTML, CSS, JavaScript, jQuery, Lodash, Numeral, Moment</p>
+            <p>
+              Technologies used: HTML, CSS, JavaScript, jQuery, Lodash, Numeral, Moment
+            </p>
 
             <div class="project-links">
               <a href="https://amandaherschleb.github.io/my-14ers/" target="_blank">
                 <i class="fa fa-desktop" aria-hidden="true"></i>
-                Live App
+                <span class="link-text">
+                  Live App
+                </span>
               </a>
 
               <a href="https://github.com/amandaherschleb/my-14ers" target="_blank">
                 <i class="fa fa-code" aria-hidden="true"></i>
-                Code
+                <span class="link-text">
+                  Code
+                </span>
               </a>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="contact" class="last-section">
+      <section 
+        id="contact" 
+        class="last-section"
+      >
         <div class="row">
-          <h1 class="section-header">CONTACT</h1>
+          <h1 class="section-header">
+            CONTACT
+          </h1>
           <div class="contact-info">
             <p>Thanks for checking out my portfolio!</p>
 
             <div class="col-4 contact-col left">
               <p>Have any questions or want to contact me?</p>
-              <p>Send me an email:
+              <p>
+                Send me an email:
                 <a href="mailto:amanda.herschleb@gmail.com" class="contact-link">
                   <i class="fa fa-envelope-o fa-3x" aria-hidden="true"></i>
                 </a>
@@ -182,8 +273,11 @@
             </div>
 
             <div class="col-4 contact-col">
-              <p>Want to know more about my background?</p>
-              <p>Check out my LinkedIn:
+              <p>
+                Want to know more about my background?
+              </p>
+              <p>
+                Check out my LinkedIn:
                 <a href="https://www.linkedin.com/in/amandaherschleb/" target="_blank" class="contact-link">
                   <i class="fa fa-linkedin fa-3x" aria-hidden="true"></i>
                 </a>
@@ -191,8 +285,11 @@
             </div>
 
             <div class="col-4 contact-col right">
-              <p>Interested in seeing more of my code?</p>
-              <p>Go to my GitHub page:
+              <p>
+                Interested in seeing more of my code?
+              </p>
+              <p>
+                Go to my GitHub page:
                 <a href="https://github.com/amandaherschleb" target="_blank" class="contact-link">
                   <i class="fa fa-github fa-3x" aria-hidden="true"></i>
                 </a>
@@ -206,7 +303,8 @@
   <script
     src="https://code.jquery.com/jquery-3.2.1.min.js"
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous">
+    crossorigin="anonymous"
+  >
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.js"></script>
   <script src="index.js"></script>
