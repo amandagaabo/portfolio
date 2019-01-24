@@ -85,7 +85,7 @@ p {
   padding: 10px;
 }
 
-.project-links a:hover, .resume-link:hover {
+.link-text:hover {
   text-decoration: underline;
 }
 
@@ -122,7 +122,6 @@ p {
 .contact-link:hover {
   color: white;
 }
-
 
 
 /* responsive nav bar css */
